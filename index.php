@@ -85,22 +85,24 @@
 <div class="row">
   <div class="col-xs-2 col-md-4"></div>
   <div class="col-xs-8 col-md-4">
-    <form action="index.php" method="post">
+    <form>
       <div class="form-group">
-        <label for="text">Tài Khoản:</label>
-        <input type="text" class="form-control" name="txtUsername" placeholder="Nhập Tài Khoản" required="true">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
-        <label for="pwd">Mật Khẩu: </label>
-        <input type="password" class="form-control" name="txtPassword" placeholder="Nhập Mật Khẩu" required="true">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
-      <div class="checkbox">
-        <label><input type="checkbox"> Nhớ Mật Khẩu</label>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
-      <button type="submit" class="btn btn-default" name="dangnhap">Đăng Nhập</button>
-    </form>
-  </div>
-  <div class="col-xs-2 col-md-4"></div>
+      <button type="submit" class="btn btn-primary" name="dangnhap">Đăng Nhập</button>
+  </form>
+</div>
+<div class="col-xs-2 col-md-4"></div>
 </body>
 </html>
 
