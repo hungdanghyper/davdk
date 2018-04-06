@@ -38,7 +38,7 @@ public class LoginActivity extends Activity {
     EditText txtuser, txtpass;
 
 
-    /**
+    /*
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
