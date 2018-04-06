@@ -1,8 +1,8 @@
 ﻿<?php
-$servername = "sql2.freemysqlhosting.net";
-$username = "sql2231060";
+$servername = "localhost";
+$username = "root";
 $password = "";
-$database = "sql2231060";
+$database = "loginapp";
 $conn = new mysqli($servername,$username,$password,$database);
 if($conn->connect_error)
 	die("Not Connected".$conn->connect_error);
