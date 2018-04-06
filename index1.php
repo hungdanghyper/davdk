@@ -100,7 +100,7 @@
       </div>
       <button type="submit" class="btn btn-default" name="dangnhap">Đăng Nhập</button></br>
       <div class="alert alert-danger" role="alert">
-        <b> Tài Khoản không đúng </b>
+       Tài Khoản không đúng. Vui lòng đăng nhập lại 
       </div>
     </form>
   </div>
