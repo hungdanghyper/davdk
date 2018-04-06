@@ -183,10 +183,10 @@ else if ($D1 == "0") {
 							<table> <br />	
 								<tr><a align='center'> <b> ON  </b> </a><tr>
 									<br />	<br />					
-									<tr><a href="?D01=1" class="btn btn-primary btn-lg active">Light On</a> </tr>
-									<tr><a href="?D02=1" class="btn btn-primary btn-lg active">Fan On</a>	 </tr>			
-									<tr><a href="?D03=1" class="btn btn-primary btn-lg active">Cooker On </a> </tr>
-									<tr><a href="?D04=1" class="btn btn-primary btn-lg active">Motor On</a></tr>
+									<tr><a href="?D01=1" class="btn btn-outline-primary">Light On</a> </tr>
+									<tr><a href="?D02=1" class="btn btn-outline-primary">Fan On</a>	 </tr>			
+									<tr><a href="?D03=1" class="btn btn-outline-primary">Cooker On </a> </tr>
+									<tr><a href="?D04=1" class="btn btn-outline-primary">Motor On</a></tr>
 								</table>
 							</div>
 						</td>
@@ -194,10 +194,10 @@ else if ($D1 == "0") {
 							<div class="col-md-8 col-md-offset-2">	<br />
 								<a align='center'> <b> OFF </b> </a> <br />
 								<br />					
-								<a href="?D01=0" class="btn btn-secondary btn-lg active">Light Off</a>
-								<a href="?D02=0" class="btn btn-secondary btn-lg active">Fan Off</a>				
-								<a href="?D03=0" class="btn btn-secondary btn-lg active">Cooker Off</a>		
-								<a href="?D04=0" class="btn btn-secondary btn-lg active">Motor Off</a><br />
+								<a href="?D01=0" class="btn btn-outline-primary">Light Off</a>
+								<a href="?D02=0" class="btn btn-outline-primary">Fan Off</a>				
+								<a href="?D03=0" class="btn btn-outline-primary">Cooker Off</a>		
+								<a href="?D04=0" class="btn btn-outline-primary">Motor Off</a><br />
 							</div>
 						</td>
 						<td width=25% bgcolor="#b2b1b1"> </td>
