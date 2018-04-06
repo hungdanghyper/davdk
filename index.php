@@ -89,11 +89,11 @@
     <form action="index.php" method="post">
       <div class="form-group">
         <label for="text">Tài Khoản:</label>
-        <input type="text" class="form-control" name="txtUsername" placeholder="Nhập Tài Khoản">
+        <input type="text" class="form-control" name="txtUsername" placeholder="Nhập Tài Khoản" required="true">
       </div>
       <div class="form-group">
         <label for="pwd">Mật Khẩu: </label>
-        <input type="password" class="form-control" name="txtPassword" placeholder="Nhập Mật Khẩu">
+        <input type="password" class="form-control" name="txtPassword" placeholder="Nhập Mật Khẩu" required="true">
       </div>
       <div class="checkbox">
         <label><input type="checkbox"> Nhớ Mật Khẩu</label>
@@ -102,10 +102,6 @@
     </form>
   </div>
   <div class="col-xs-2 col-md-4"></div>
-  <!-- jQuery -->
-  <script src="bootstrap/js/jquery.js"></script>
-  <!-- Bootstrap Core JavaScript -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 
