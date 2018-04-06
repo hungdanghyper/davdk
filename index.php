@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="/chip.png"/>
-<link rel="shortcut icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/electronic-devices-vol-1-3/32/chip_circuit_ic_microchip_microprocessor_semiconductor_integratedcircuit-512.png"/>
   <title>Đồ Án VÐK </title>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
