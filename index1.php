@@ -98,12 +98,12 @@
       <div class="checkbox">
         <label><input type="checkbox"> Nhớ Mật Khẩu</label>
       </div>
-      <button type="submit" class="btn btn-default" name="dangnhap">Đăng Nhập</button>
+      <button type="submit" class="btn btn-default" name="dangnhap">Đăng Nhập</button></br>
+      <div class="alert alert-danger" role="alert">
+        <b> Tài Khoản không đúng </b>
+      </div>
     </form>
   </div>
-  <div class="alert alert-danger" role="alert">
-    <b> Tài Khoản không đúng </b>
-</div>
 </body>
 </html>
 
