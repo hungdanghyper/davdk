@@ -20,9 +20,7 @@ $D4 = $_GET['D04'];
 
 $rf = fopen("device.json", "r") or die("can't open file");// mở file device.json với thuộc tính r (read only)
 $data = fread($rf,filesize('device.json'));// Đọc file và trả về nội dung vào data
-
 fclose($rf);
-
 if($D1 == "1") { 
   $file = fopen("device.json", "w") or die("can't open file"); //  mở file với thuộc tính Write only
   if($data == ""){
@@ -114,14 +112,12 @@ else if ($D1 == "0") {
 	fclose($file);
 }
 ?>
-
-
 <html>  
 <head>  
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/png" href="/chip.png"/>
+	<link rel="shortcut icon" type="image/png" href="chip.png"/>
 	<title>Đồ Án VÐK </title>
 	<script type=”text/javascript”>
 		function reFresh() {
@@ -129,23 +125,22 @@ else if ($D1 == "0") {
 		}
 		window.setInterval(“reFresh()”,<?php echo rand(1500, 3000); ?>);
 	</script>
-
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<style>
-	.current { color: red; }
-</style>
+		.current { color: red; }
+	</style>
 <script>
 	$(function(){
-		$('.btn btn-primary btn-block btn-lg').click(function(){
-			$('.btn btn-primary btn-block btn-lg').removeClass();
+		$('.btn btn-outline-primary').click(function(){
+			$('.btn btn-outline-primary').removeClass();
 			$(this).addClass('current');
 		});
 	});
 </script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <style> body{background: #dddddd  } </style> 
@@ -184,7 +179,7 @@ else if ($D1 == "0") {
 								<tr><a align='center'> <b> ON  </b> </a><tr>
 									<br />	<br />					
 									<tr><a href="?D01=1" class="btn btn-outline-primary">Light On</a> </tr>
-									<tr><a href="?D02=1" class="btn btn-outline-primary">Fan On</a>	 </tr>			
+									<tr><a href="?D02=1" class="btn btn-outline-primary">Fan On</a></tr>			
 									<tr><a href="?D03=1" class="btn btn-outline-primary">Cooker On </a> </tr>
 									<tr><a href="?D04=1" class="btn btn-outline-primary">Motor On</a></tr>
 								</table>
