@@ -6,7 +6,7 @@
            echo '<a href="logout.php">Logout</a>';
        }
        else{
-           echo "ban chua dang nhap";
+          	header('Location:index.php');
        		   die();
        }
        ?> 
@@ -163,7 +163,7 @@ else if ($D1 == "0") {
 		</table>
 		<table  width="100%" height="40">
 			<tr>
-				<td bgcolor="#5c5d5d" align='center' > <font color='white' > <b> HỒ TÁ QUÝ - ĐINH HỮU QUÂN - BÙI VIẾT TOÀN </b> </font> </td>
+				<td bgcolor="#5c5d5d" align='center' > <font color='white' > <b> ĐẶNG BÁ HÙNG - NGUYỄN TIẾN DŨNG - PHAN KIỀU HƯNG </b> </font> </td>
 			</tr>
         </table>
 		<table width=100% align='center' border='2'>
