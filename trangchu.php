@@ -5,23 +5,24 @@ $D2 = $_GET['D02'];
 $D3 = $_GET['D03'];
 $D4 = $_GET['D04'];
 
-$rf = fopen("device.json", "r") or die("can't open file");// mở file device.json với thuộc tính r (read only)
+$rf = @fopen("device.json", "r") or die("can't open file");// mở file device.json với thuộc tính r (read only)
 $data = fread($rf,filesize('device.json'));// Đọc file và trả về nội dung vào data
-if (is_writable ('device.json'))
-		$data[9] = "5";
-	else
-		$data[9] = "6";
 fclose($rf);
 
 if($D1 == "1") { 
-  $file = fopen("device.json", "w") or die("can't open file"); //  mở file với thuộc tính Write only
+  $file = @fopen("device.json", "w") or die("can't open file"); //  mở file với thuộc tính Write only
   if($data == ""){
-
- 	fwrite($file, '{"D01":"1","D02":"0","D03":"0","D04":"0"}'); //ghi nội dung vào file
+  	if(is_writable ('device.json'))
+  	{
+ 		fwrite($file, '{"D01":"1","D02":"0","D03":"0","D04":"0"}');//ghi nội dung vào file
+ 	} 
 
  }else{
- 	$data[8]='1';
- 	fwrite($file, $data);	
+ 	if(is_writable ('device.json'))
+ 	{
+ 		$data[8]='1';
+ 		fwrite($file, 'huhu');
+ 	}	
  }
  fclose($file);
 } 
@@ -189,17 +190,17 @@ else if ($D1 == "0") {
 				</tbody>
 			</table>
 			<div class="alert alert-primary" role="alert">
-					<?php
-					if($data[8]=='1') $state1 = 'ON';
-					else if($data[8]=='0') $state1 = 'OFF';
-					if($data[18]=='1') $state2 = 'ON';
-					else if($data[18]=='0') $state2 = 'OFF';
-					if($data[28]=='1') $state3 = 'ON';
-					else if($data[28]=='0') $state3 = 'OFF';
-					if($data[38]=='1') $state4 = 'ON';
-					else if($data[38]=='0') $state4 = 'OFF';
-					echo "<i>Status</i>: "."&#160 &#160<strong>Light</strong>: ".$data[9]."&#160 &#160 <strong>Fan</strong>: ".$state2."&#160 &#160 <strong>Motor</strong>: ".$state3."&#160 &#160  <strong>Kettles</strong>: ".$state4;
-					?>
+				<?php
+				if($data[8]=='1') $state1 = 'ON';
+				else if($data[8]=='0') $state1 = 'OFF';
+				if($data[18]=='1') $state2 = 'ON';
+				else if($data[18]=='0') $state2 = 'OFF';
+				if($data[28]=='1') $state3 = 'ON';
+				else if($data[28]=='0') $state3 = 'OFF';
+				if($data[38]=='1') $state4 = 'ON';
+				else if($data[38]=='0') $state4 = 'OFF';
+				echo "<i>Status</i>: "."&#160 &#160<strong>Light</strong>: ".$data[9]."&#160 &#160 <strong>Fan</strong>: ".$state2."&#160 &#160 <strong>Motor</strong>: ".$state3."&#160 &#160  <strong>Kettles</strong>: ".$state4;
+				?>
 			</div>
 		</div>
 	</div>
