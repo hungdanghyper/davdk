@@ -102,8 +102,6 @@ else if ($D1 == "0") {
 	fclose($file);
 }
 ?>
-
-
 <html>  
 <head>  
 	<meta charset="utf-8">
@@ -111,7 +109,6 @@ else if ($D1 == "0") {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="chip.png">
 	<title> Ðồ Án LTHT-VÐK </title>
-
 	<script type=”text/javascript”>
 		function reFresh() {
 			window.open(location.reload(true))
