@@ -1,16 +1,4 @@
-﻿<div class="dangnhapdc" style="float:right; margin-right:6px;">
-	<?php 
-	session_start();
-	if (isset($_SESSION['username']) && $_SESSION['username']){
-		echo '<Strong>Xin Chào</strong>: '.$_SESSION['username']." ";
-		echo '<a href="logout.php">Logout</a>';
-	}
-	else{
-		echo "ban chua dang nhap";
-		die();
-	}
-	?> 
-</div>
+﻿
 <?php
 
 $D1 = $_GET['D01'];  //BIEN VA PHUONG THUC //BIEN $D1 LAY DU LIEU DUOC TRUYEN DEN BANG PHUONG THUC $_GET TRONG TRUONG D01
@@ -169,6 +157,19 @@ else if ($D1 == "0") {
 
 <body >
 	<div class="jumbotron">
+		<div class="alert alert-success" role="alert">
+			<?php 
+			session_start();
+			if (isset($_SESSION['username']) && $_SESSION['username']){
+				echo '<Strong>Xin Chào</strong>: '.$_SESSION['username']." ";
+				echo '<a class="float-right" href="logout.php">Logout</a>';
+			}
+			else{
+				header('Location:index.php');
+				die();
+			}
+			?> 
+		</div>
 		<h1 class="display-4 text-center">ĐỒ ÁN LẬP TRÌNH HỆ THỐNG VÀ VI ĐIỀU KHIỂN</h1>
 		<p class="display-5 text-xl-center text-primary size"> ĐẶNG BÁ HÙNG - NGUYỄN TIẾN DŨNG - PHAN KIỀU HƯNG</p>
 		<hr class="my-4">
