@@ -78,7 +78,7 @@
     <hr class="my-4">
     <p class="display-5 text-xl-center text-justify size">ĐĂNG NHẬP</p>
     <div class="w-75 center">
-      <form>
+      <form action="index1.php" method="POST">
         <div class="form-group">
           <label>Username</label>
           <input type="text" class="form-control" aria-describedby="username" placeholder="Enter Username" name="txtUsername">
