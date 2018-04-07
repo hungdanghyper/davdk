@@ -1,6 +1,5 @@
 ﻿
 <?php
-
 $D1 = $_GET['D01'];  //BIEN VA PHUONG THUC //BIEN $D1 LAY DU LIEU DUOC TRUYEN DEN BANG PHUONG THUC $_GET TRONG TRUONG D01
 $D2 = $_GET['D02'];
 $D3 = $_GET['D03'];
@@ -133,9 +132,8 @@ else if ($D1 == "0") {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
 </head>
-<style> body{background: #dddddd  }
+<style>
 .jumbotron{
 	max-width: 1300px;
 	margin: 0 auto;
