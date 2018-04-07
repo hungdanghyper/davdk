@@ -202,6 +202,9 @@ else if ($D1 == "0") {
 			</div>
 		</div>
 	</div>
+	<div class="panel-footer">
+		<p class="text-xl-center">&copy; Copyright By <a href="">Manh Hung</a></p>
+	</div>
 	<script type=”text/javascript”>
 		function reFresh() {
 			window.open(location.reload(true))
