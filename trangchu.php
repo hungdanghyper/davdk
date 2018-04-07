@@ -16,7 +16,7 @@ if($D1 == "1") {
  }else{
  	
  		$data[8]='1';
- 		fwrite($rf, 'huhu');	
+ 		fwrite($file, $data);	
  }
  fclose($file);
 } 
