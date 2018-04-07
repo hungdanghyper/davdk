@@ -80,8 +80,8 @@
     <div class="w-75 center">
       <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="text" class="form-control" aria-describedby="username" placeholder="Enter email" name="txtUsername">
+          <label>Username</label>
+          <input type="text" class="form-control" aria-describedby="username" placeholder="Enter Username" name="txtUsername">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
