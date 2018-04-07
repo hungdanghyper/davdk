@@ -195,7 +195,7 @@ else if ($D1 == "0") {
 					else if($data[28]=='0') $state3 = 'OFF';
 					if($data[38]=='1') $state4 = 'ON';
 					else if($data[38]=='0') $state4 = 'OFF';
-					echo "<i>Status</i>: "."&#160 &#160<strong>Light</strong>: ".$state1."&#160 &#160 <strong>Fan</strong>: ".$state2."&#160 &#160 <strong>Motor</strong>: ".$state3."&#160 &#160  <strong>Water Heater</strong>: ".$state4;
+					echo "<i>Status</i>: "."&#160 &#160<strong>Light</strong>: ".$state1."&#160 &#160 <strong>Fan</strong>: ".$state2."&#160 &#160 <strong>Motor</strong>: ".$state3."&#160 &#160  <strong>Kettles</strong>: ".$state4;
 					?>
 			</div>
 		</div>
