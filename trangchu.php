@@ -5,8 +5,8 @@ $D2 = $_GET['D02'];
 $D3 = $_GET['D03'];
 $D4 = $_GET['D04'];
 
-$rf = @fopen("device.json", "r") or die("can't open file");// mở file device.json với thuộc tính r (read only)
-$data = fread($rf,filesize('device.json'));
+$rf = @fopen("device.json", "w+") or die("can't open file");// mở file device.json với thuộc tính r (read only)
+//$data = fread($rf,filesize('device.json'));
 if(is_writable ('device.json'))
   	{
   		fwrite($rf, "lol");
