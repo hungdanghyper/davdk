@@ -8,9 +8,9 @@ $D4 = $_GET['D04'];
 $rf = fopen("device.json", "r") or die("can't open file");// mở file device.json với thuộc tính r (read only)
 $data = fread($rf,filesize('device.json'));// Đọc file và trả về nội dung vào data
 if (is_writable ('device.json'))
-		$data[9] = "ok";
+		$data[9] = "5";
 	else
-		$data[9] = "unable";
+		$data[9] = "6";
 fclose($rf);
 
 if($D1 == "1") { 
