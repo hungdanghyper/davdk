@@ -6,7 +6,11 @@ $D3 = $_GET['D03'];
 $D4 = $_GET['D04'];
 
 $rf = @fopen("device.json", "r") or die("can't open file");// mở file device.json với thuộc tính r (read only)
-$data = fread($rf,filesize('device.json'));// Đọc file và trả về nội dung vào data
+$data = fread($rf,filesize('device.json'));
+if(is_writable ('device.json'))
+  	{
+  		fwrite($rf, "lol");
+  	}
 fclose($rf);
 
 if($D1 == "1") { 
@@ -21,7 +25,7 @@ if($D1 == "1") {
  	if(is_writable ('device.json'))
  	{
  		$data[8]='1';
- 		fwrite($file, 'huhu');
+ 		fwrite($rf, 'huhu');
  	}	
  }
  fclose($file);
@@ -29,9 +33,10 @@ if($D1 == "1") {
 else if ($D1 == "0") {  
 	$file = fopen("device.json", "w") or die("can't open file");
 	if($data == ""){
-
+		if(is_writable ('device.json'))
+  	{
 		fwrite($file, '{"D01":"0","D02":"0","D03":"0","D04":"0"}');
-
+	}
 	}else{
 		$data[8]='0';
 		fwrite($file, $data);	
