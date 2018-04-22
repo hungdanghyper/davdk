@@ -129,7 +129,7 @@ else if ($D1 == "0") {
 	<div class="jumbotron">
 		<div class="alert alert-success" role="alert">
 			<?php 
-			session_start();
+			/*session_start();
 			if (isset($_SESSION['username']) && $_SESSION['username']){
 				echo '<Strong>Xin Chào</strong>: '.$_SESSION['username']." ";
 				echo '<a class="float-right" href="logout.php">Logout</a>';
@@ -137,7 +137,7 @@ else if ($D1 == "0") {
 			else{
 				header('Location:index.php');
 				die();
-			}
+			}*/
 			?> 
 		</div>
 		<h1 class="display-4 text-center">ĐỒ ÁN LẬP TRÌNH HỆ THỐNG VÀ VI ĐIỀU KHIỂN</h1>
