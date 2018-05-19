@@ -40,7 +40,7 @@ public class OptionActivity extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_option);
 
-        retro = new Retrofit.Builder().baseUrl("http://doanvdk.16mb.com")
+        retro = new Retrofit.Builder().baseUrl("https://davdk.herokuapp.com")
                 //xu dung gson cho viec parse va maps json data toi object
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();

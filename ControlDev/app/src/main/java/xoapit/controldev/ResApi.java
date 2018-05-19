@@ -41,6 +41,6 @@ public interface ResApi {
 
     //login user
     @FormUrlEncoded
-    @POST("/androidlogin.php")
+    @POST("/androidLogin.php")
     Call<Device> createLogin(@Field("user") String user,@Field("pass") String pass);
 }

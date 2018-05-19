@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="About"
+            android:text="About us"
             android:id="@+id/textView20"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
@@ -35,10 +35,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp" />
 
-    <android.inputmethodservice.ExtractEditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sản phẩm điều khiển thiết bị điên qua Wifi. Thực hiện điều khiển thiệt bị qua Website http://doanvdk.bugs3.com/ và thông qua App Android."
+        android:text="Sản phẩm điều khiển thiết bị điên qua Wifi. Thực hiện điều khiển thiệt bị qua Website https://davdk.herokuapp.com/ và thông qua App Android."
         android:id="@+id/extractEditText"
         android:layout_marginTop="37dp"
         android:textIsSelectable="true"
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="1. Hồ Tá Quý"
+        android:text="1. Đặng Bá Hùng _ 15T1"
         android:id="@+id/textView11"
         android:layout_below="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="2. Đinh Hữu Quân"
+        android:text="2. Nguyễn Tiến Dũng _ 15T1"
         android:id="@+id/textView13"
         android:layout_below="@+id/textView11"
         android:layout_alignStart="@+id/textView11"
@@ -83,20 +83,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="3. Bùi Viết Toàn"
+        android:text="3. Phan Kiều Hưng _ 15T1"
         android:id="@+id/textView14"
         android:layout_below="@+id/textView13"
         android:layout_alignStart="@+id/textView13"
         android:textColor="#2980b9" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Lớp: 13T1 - DUT"
-        android:id="@+id/textView15"
-        android:layout_below="@+id/textView14"
-        android:layout_alignStart="@+id/textView14" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -108,7 +99,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Copyright 2016 ControlDev"
+            android:text="Copyright 2018 By Devs"
             android:id="@+id/textView16"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
@@ -116,23 +107,14 @@
     </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Phone: 01672 734 732"
-        android:id="@+id/textView18"
-        android:layout_below="@+id/textView15"
-        android:layout_alignStart="@+id/textView15"
-        android:textStyle="italic" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Email: dongianchithethoi@gmail.com"
         android:id="@+id/textView19"
-        android:layout_below="@+id/textView18"
-        android:layout_alignStart="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView14"
+        android:text="Email: cannotcontact@gmail.com"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="italic" />
 
 </RelativeLayout>
