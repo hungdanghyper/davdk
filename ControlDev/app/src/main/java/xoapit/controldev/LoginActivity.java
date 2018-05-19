@@ -68,9 +68,9 @@ public class LoginActivity extends Activity {
         //xu li voi du lieu phan hoi ve tu server
         @Override
         protected void onPostExecute(String s) {
-            if (s.equals("OK")) IntentReset();
-            if(!s.equals("")) Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
-            else Toast.makeText(getApplicationContext(),"No Connect", Toast.LENGTH_SHORT).show();
+            /*if (s.equals("OK"))*/ IntentReset();
+           // if(!s.equals("")) Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
+           // else Toast.makeText(getApplicationContext(),"No Connect", Toast.LENGTH_SHORT).show();
         }
     }
 

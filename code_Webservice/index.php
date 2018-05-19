@@ -18,7 +18,6 @@ if($D1 == "1") {
  		$data[8]='1';
  		fwrite($file, $data);	
  }
- echo json_encode($file);
  fclose($file);
 } 
 else if ($D1 == "0") {  

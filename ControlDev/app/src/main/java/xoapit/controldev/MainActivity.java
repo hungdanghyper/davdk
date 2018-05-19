@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         //khoi tao retrofit de gan API endpoint(domain url) cho retrofit
-        retrofit=new Retrofit.Builder().baseUrl("http://doanvdk.16mb.com")
+        retrofit=new Retrofit.Builder().baseUrl("http://davdk.herokuapp.com")
                 //xu dung gson cho viec parse va maps json data toi object
                 .addConverterFactory(GsonConverterFactory.create())//chuyen file json ve dt
                 .build();
