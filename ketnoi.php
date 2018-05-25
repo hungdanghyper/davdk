@@ -1,8 +1,8 @@
 ﻿<?php
-$servername = "sql3.freemysqlhosting.net";
-$username = "sql3231160";
-$password = "Hungtan17101996";
-$database = "sql3231160";
+$servername = "69.12.87.130";
+$username = "njgvxtrx";
+$password = "Y158w6tvkB";
+$database = "njgvxtrx_login";
 $conn = new mysqli($servername,$username,$password,$database);
 if($conn->connect_error)
 	die("Not Connected".$conn->connect_error);
