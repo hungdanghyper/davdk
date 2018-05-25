@@ -1,5 +1,5 @@
 ﻿<?php
-$servername = " https://happy.hugehost.info:2083";
+$servername = "Happy Server";
 $username = "njgvxtrx";
 $password = "Y158w6tvkB";
 $database = "njgvxtrx_login";
