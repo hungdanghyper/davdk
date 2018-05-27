@@ -9,14 +9,17 @@ if(isset($_POST['user'])&&isset($_POST['pass'])){
 		echo "Username doesn't exist";
 		exit;
 	}
+	else{
 	$res = $conn->query($sql);
 	if ($res->num_rows > 0) {
 		while($row = $res->fetch_assoc()){
 			if ($password == $row['password'] && $username == $row['username']) {
-				return "OK";
+				echo "OK";
+				exit;
 			}
 		}
 	}
+}
 }
 die(); 
 ?>
