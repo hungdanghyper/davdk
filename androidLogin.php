@@ -13,7 +13,7 @@ if(isset($_POST['user'])&&isset($_POST['pass'])){
 	if ($res->num_rows > 0) {
 		while($row = $res->fetch_assoc()){
 			if ($password == $row['password'] && $username == $row['username']) {
-				echo "OK";
+				return "OK";
 			}
 		}
 	}
