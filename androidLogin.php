@@ -4,22 +4,21 @@ if(isset($_POST['user'])&&isset($_POST['pass'])){
 	$password = $_POST['pass'];
     //$password = md5($password);
 	require'ketnoi.php';
-	$sql = 'SELECT username, password FROM login WHERE username="$username"';
-	if($conn->query($sql) == 0){
+	$sql = "SELECT username, password FROM login WHERE username='admin'";
+	$res = $conn->query($sql);
+	if($res == 0){
 		echo "Username doesn't exist";
 		exit;
 	}
 	else{
-	$res = $conn->query($sql);
-	if ($res->num_rows > 0) {
 		while($row = $res->fetch_assoc()){
-			if ($password == $row['password'] && $username == $row['username']) {
+			if ($password == $row['password']) {
 				echo "OK";
 				exit;
 			}
 		}
 	}
-}
+	$conn->close();
 }
 die(); 
 ?>
