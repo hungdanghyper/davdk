@@ -18,6 +18,7 @@ if(isset($_POST['user'])&&isset($_POST['pass'])){
 			}
 		}
 	}
+	echo "OK";
 	$conn->close();
 }
 die(); 
