@@ -10,7 +10,7 @@ if(isset($_POST['user'])&&isset($_POST['pass'])){
 		while($row = $res->fetch_assoc()){
 			if ($password == $row['password']) {
 				$result = "OK";
-				exit;
+				break;
 			}
 		}
 	}
