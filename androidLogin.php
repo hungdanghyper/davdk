@@ -4,7 +4,7 @@ if(isset($_POST['user'])&&isset($_POST['pass'])){
 	$password = $_POST['pass'];
     //$password = md5($password);
 	require'ketnoi.php';
-	$sql = "SELECT username, password FROM login WHERE username='$username'";
+	$sql = 'SELECT username, password FROM login WHERE username="$username"';
 	if($conn->query($sql) == 0){
 		echo "Username doesn't exist";
 		exit;
