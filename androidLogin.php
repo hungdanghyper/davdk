@@ -13,9 +13,8 @@ if(isset($_POST['user'])&&isset($_POST['pass'])){
 				break;
 			}
 		}
+		echo $result;
 	}
-	echo $result;
 	$conn->close();
 }
-die(); 
 ?>
