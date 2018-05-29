@@ -1,9 +1,9 @@
 <?php
+require'ketnoi.php';
 if(isset($_POST['user'])&&isset($_POST['pass'])){
 	$username = $_POST['user'];
 	$password = $_POST['pass'];
-	echo $username." - ".$password;
-	require'ketnoi.php';
+	//echo $username." - ".$password;
 	$sql = "SELECT username, password FROM login WHERE username='$username'";
 	$result = $conn->query($sql);
 	if ($result->num_rows > 0) {
